@@ -1,4 +1,5 @@
 import React,{ Component } from 'react'
+import './App.css';
 
 class Form extends Component{
 constructor(props){
@@ -38,6 +39,10 @@ handleChange(event){
 render(){
 	return(
 	<form onSubmit={this.handleSubmit}>
+		<div>
+		<h1>ยินดีต้อนรับ!</h1>
+		<p>โปรดกรอกข้อมูลของคุณ</p>
+		</div>
 		<div>
 		<label htmlFor='ชื่อ'>Email</label>
 		<input
